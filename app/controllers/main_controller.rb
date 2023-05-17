@@ -3,8 +3,8 @@ class MainController < ApplicationController
   before_action :set_page_options
 
   def index
-    @brands = Brand.all
-    @hits = Product.all
+    @brands = Brand.limit(3)
+    @hits   = Product.all.limit(8)
   end
 
   def set_page_options
