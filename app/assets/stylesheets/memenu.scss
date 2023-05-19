@@ -50,10 +50,10 @@
 }
 .me-one ul li a:hover{
 	text-decoration:none;
-	color:#73B6E1;
+	color:#80808d;
 }
 .me-one h4 {
-    color: #73B6E1;
+    color: #80808d;
     font-size: 1.1em;
     text-align: left;
 }
@@ -146,13 +146,13 @@
 	color:#000;
 }
 .skyblue>li:hover>a,.skyblue>li.active>a,.skyblue .dropdown li:hover>a{
-	color:#73B6E1;
+	color:#80808d;
 }
 .skyblue .mepanel img:hover,.skyblue form.contact input[type="text"]:focus,.skyblue form.contact textarea:focus{
-	border:solid 1px #0194be;
+	border:solid 1px #80808d;
 }
 .skyblue form.contact input[type="submit"]{
-	background:#0194be;
+	background:#000;
 }
 @media(max-width:768px){
 	.memenu>li{display:block;width:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
