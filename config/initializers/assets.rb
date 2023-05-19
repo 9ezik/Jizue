@@ -20,6 +20,8 @@ Rails.application.config.assets.precompile += %w[typeahead.bundle.js]
 Rails.application.config.assets.precompile += %w[easydrop.js]
 Rails.application.config.assets.precompile += %w[mem.js]
 Rails.application.config.assets.precompile += %w[flexs.js]
+Rails.application.config.assets.precompile += %w[responsive.js]
+
 
 
 
