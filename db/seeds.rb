@@ -24,21 +24,21 @@ brand_attributes.each do |attr|
   Brand.create(attr) unless Brand.where(attr).first
 end
 
-footwear = Category.create(title: 'Footwear',bytitle: 'footwear',description: 'footwear') 								
-sneakers = Category.create(title: 'Sneakers',bytitle: 'sneakers',description: 'sneakers', parent: footwear) 
-clothes = Category.create(title: 'Clothes',bytitle: 'clothes',description: 'clothes') 								
-hoodie = Category.create(title: 'Hoodie',bytitle: 'hoodie',description: 'hoodie', parent: clothes) 	
-pants = Category.create(title: 'Pants',bytitle: 'pants',description: 'pants', parent: clothes)						
-t_shirts = Category.create(title: 'T-shirts',bytitle: 't-shirts',description: 't-shirts', parent: clothes)	
-accessories = Category.create(title: 'Accessories',bytitle: 'accessories',description: 'accessories')			
-socks = Category.create(title: 'Socks',bytitle: 'socks',description: 'socks', parent: accessories)	
-caps = Category.create(title: 'Caps',bytitle: 'caps',description: 'caps', parent: accessories)		
-bags = Category.create(title: 'Bags',bytitle: 'bags',description: 'bags', parent: accessories)	
-hats = Category.create(title: 'Hats',bytitle: 'hats',description: 'hats', parent: accessories)	
+footwear = Category.create(title: 'Footwear',bytitle: 'footwear',description: 'footwear') 								  # 1 MAIN
+sneakers = Category.create(title: 'Sneakers',bytitle: 'sneakers',description: 'sneakers', parent: footwear) # 2
+clothes = Category.create(title: 'Clothes',bytitle: 'clothes',description: 'clothes') 								      # 3 MAIN
+hoodie = Category.create(title: 'Hoodie',bytitle: 'hoodie',description: 'hoodie', parent: clothes) 	        # 4
+pants = Category.create(title: 'Pants',bytitle: 'pants',description: 'pants', parent: clothes)						  # 5
+t_shirts = Category.create(title: 'T-shirts',bytitle: 't-shirts',description: 't-shirts', parent: clothes)	# 6
+accessories = Category.create(title: 'Accessories',bytitle: 'accessories',description: 'accessories')			  # 7 MAIN
+socks = Category.create(title: 'Socks',bytitle: 'socks',description: 'socks', parent: accessories)	        # 8
+caps = Category.create(title: 'Caps',bytitle: 'caps',description: 'caps', parent: accessories)		          # 9
+bags = Category.create(title: 'Bags',bytitle: 'bags',description: 'bags', parent: accessories)	            # 10
+hats = Category.create(title: 'Hats',bytitle: 'hats',description: 'hats', parent: accessories)	            # 11
 
 product_attributes = [
       {
-        category_id: '1',
+        category_id: '2',
         brand_id: '1',
         title: 'Boots Nike',
         bytitle: 'Lorem ipsum',
@@ -52,7 +52,7 @@ product_attributes = [
         hit: 1
       },
       {
-        category_id: '5',
+        category_id: '4',
         brand_id: '2',
         title: 'Hoodie Nike',
         bytitle: 'Lorem ipsum',
@@ -66,7 +66,7 @@ product_attributes = [
         hit: 1
       },
       {
-        category_id: '6',
+        category_id: '5',
         brand_id: '5',
         title: 'Pants Diesel',
         bytitle: 'Lorem ipsum',
@@ -80,7 +80,7 @@ product_attributes = [
         hit: 1
       },
       {
-        category_id: '7',
+        category_id: '6',
         brand_id: '2',
         title: 'T-shirt Adidas',
         bytitle: 'Lorem ipsum',
@@ -94,7 +94,7 @@ product_attributes = [
         hit: 1
       },
       {
-        category_id: '9',
+        category_id: '8',
         brand_id: '2',
         title: 'Socks adidas',
         bytitle: 'Lorem ipsum',
@@ -108,7 +108,7 @@ product_attributes = [
         hit: 1
       },
       {
-        category_id: '10',
+        category_id: '9',
         brand_id: '3',
         title: 'Caps NewBalance',
         bytitle: 'Lorem ipsum',

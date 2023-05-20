@@ -1,0 +1,49 @@
+<!--breadcrumbs-start-->
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs-main">
+            <ol class="breadcrumb">
+                <li><%= link_to(render_breadcrumbs, root_path) %></li>
+                <li><%=@category.title %></li>
+            </ol>
+        </div>
+    </div>
+</div>
+<!--breadcrumbs-end-->
+<!--prdt-start-->
+<div class="prdt">
+    <div class="container">
+        <div class="prdt-top">
+            <div class="col-md-9 prdt-left">
+                <% if !@category.products.empty? %>
+                    <div class="product-one">
+                        <% @category.products.each do |product| %>
+                            <div class="col-md-4 product-left p-left">
+                                <div class="product-main simpleCart_shelfItem">
+                                    <%= link_to(image_tag(product.img, alt: "", class: "img-responsive zoom-img"), product, class: "mask") %>
+                                    <div class="product-bottom">
+                                        <h3><%= product.title %></h3>
+                                        <p>Explore Now</p>
+                                        <h4>
+                                            <a data-id="<%= product.id %>" class="add-to-cart-link" href="cart/add?id=<%=product.id %>"><i></i></a>
+                                            <span class="item_price"><%=product.price %></span>
+                                            <% if product.old_price %>
+                                                <small><del><%= product.old_price %></del></small>
+                                            <% end %>
+                                        </h4>
+                                    </div>
+                                    <div class="srch srch1">
+                                        <span>-50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        <% end %>
+                        <div class="clearfix"></div>
+                    </div>
+                <% else %>
+                    <h3>Category empty</h3>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>
