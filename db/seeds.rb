@@ -17,7 +17,11 @@ brand_attributes = [{
 {
   title: 'Diesel', bytitle: 'diesel',  
   img: 'logo_diesel.jpg', description: 'Lorem ipsum'     # 5
-}
+},
+  {
+    title: 'Polo', bytitle: 'polo',
+    img: 'logo_polo.jpg', description: 'Lorem ipsum'     # 6
+  }
 ]
 
 brand_attributes.each do |attr|

@@ -54,7 +54,6 @@
                                 <a href="product/<%=hit.id%>" class="mask">
                                     <%= image_tag(hit.img, alt: "", class: "img-responsive zoom-img")%>
                                 </a>
-                                <%= %>
                                 <div class="product-bottom">
                                     <h3><a href="product/<%=hit.id%>"><%=hit.title%></a></h3>
                                     <p>Explore Now</p>
@@ -69,9 +68,7 @@
                                     </h4>
                                 </div>
                                 <div class="srch">
-                            <span>
-                            - 50 %
-                            </span>
+                                  <span>-<%= ((hit.old_price - hit.price) / hit.old_price * 100).round(0) %>%</span>
                                 </div>
                             </div>
                         </div>

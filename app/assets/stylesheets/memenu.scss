@@ -9,6 +9,7 @@
 }
 .memenu li{
 	display:inline-block;
+	position: relative;
 }
 .memenu>li>a {
     float: left;
@@ -25,8 +26,8 @@
 	position: absolute;
 	display: none;
 	background: #fff;
-	width: 80%;
-	top: 47px;
+	width: 150px;
+	top: 100%;
 	left:0%;
 	z-index: 99;
 	padding: 20px 30px 20px;
@@ -34,7 +35,13 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	text-align: center;
 }
+
+.memenu>li:hover>.mepanel {
+	display: block;
+}
+
 .me-one ul{
 	padding:0;
 }

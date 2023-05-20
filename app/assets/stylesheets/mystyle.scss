@@ -3,6 +3,12 @@
 .product-one > .product-left{
   margin-bottom: 20px;
 }
+.product-main {
+  height: 500px;
+}
+
+.product-bottom{
+}
 
 .quantity{
   margin-top: 3em;
@@ -59,7 +65,7 @@ span.twitter-typeahead .tt-suggestion:focus {
   color: #ffffff;
   text-decoration: none;
   outline: 0;
-  background-color: #337ab7;
+  background-color: #000;
 }
 .input-group.input-group-lg span.twitter-typeahead .form-control {
   height: 46px;
