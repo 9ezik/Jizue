@@ -1,5 +1,4 @@
-class CategoryController < ApplicationController
-
+class BrandController < ApplicationController
   def show
     @brand = Brand.find(params[:id])
     set_page_options

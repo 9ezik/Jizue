@@ -26,11 +26,13 @@
                 <%@brands.each do |i|%>
                     <div class="col-md-4 about-left">
                         <figure class="effect-bubba">
+                          <a href="brand/<%=i.id%>">
                             <%= image_tag(i.img, alt: "", class: "imp-responsive") %>
                             <figcaption>
                                 <h2><%= i.title %></h2>
                                 <p><%= i.description %></p>
                             </figcaption>
+                          </a>
                         </figure>
                     </div>
                 <%end%>
