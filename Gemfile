@@ -21,8 +21,6 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.3"
 gem "sass-rails"
 gem "turbolinks"
 gem "uglifier"
-
-
 gem "sprockets-rails"
 gem "importmap-rails"
 gem "turbo-rails"
