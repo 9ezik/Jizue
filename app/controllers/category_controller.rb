@@ -4,7 +4,7 @@ class CategoryController < ApplicationController
       set_page_options
     end
   
-    attr_accessor :category
+    attr_accessor :category # to avoid @category
   
     def set_page_options
       set_meta_tags category.slice(:title, :keywords, :description)

@@ -4,7 +4,7 @@ class BrandController < ApplicationController
     set_page_options
   end
 
-  attr_accessor :brand
+  attr_accessor :brand # to avoid @brand
 
   def set_page_options
     set_meta_tags brand.slice(:title, :description)
