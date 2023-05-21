@@ -192,3 +192,5 @@ gallery_attributes = [{
 gallery_attributes.each do |attr|
   Gallery.create(attr) unless Gallery.where(attr).first
 end
+
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
