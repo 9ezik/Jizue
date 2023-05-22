@@ -1,4 +1,5 @@
 class CartsController < ApplicationController
+    include CartsHelper
     layout false # show only part of footer.html.erb
 
     def destroy

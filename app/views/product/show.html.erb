@@ -94,8 +94,12 @@
               </div>
               <ul class="tag-men">
                 <li>
-                  <span>Category</span>
+                  <span>Category:</span>
                   <strong><%= @product.category.title %> </strong>
+                </li>
+                <li>
+                  <span>Brand:</span>
+                  <strong><%= @product.brand.title %> </strong>
                 </li>
               </ul>
             <div class="quantity">
@@ -108,6 +112,7 @@
                           data: { method: :post, id: @product.id },
                           class: "add-cart item_add add-to-cart-link",
                           id: "productAdd"
+
               %>
 
             </div>
@@ -117,22 +122,25 @@
 
         <div class="tabs">
           <ul class="menu_drop">
-            <li class="item1"><a href="#"><img src="<%= asset_path 'arrow.png' %>" alt="">Description</a>
-              <ul>
-                <li class="subitem1">
-                  <a href="#"><%= @product.description %></a>
+            <li class="item1">
+              <a><img src="<%= asset_path 'arrow.png' %>" alt="">Description</a>
+              <ul style="background: white">
+                <li>
+                  <p style="background: white"><%= @product.content %></p>
                 </li>
               </ul>
             </li>
-            <li class="item3"><a href="#"><img src="<%= asset_path 'arrow.png' %>" alt="">Reviews</a>
-              <ul>
-                <li class="subitem1">
-                  <a href="#"></a>
+            <li class="item3">
+              <a><img src="<%= asset_path 'arrow.png' %>" alt="">Reviews</a>
+              <ul style="background: white">
+                <li>
+                  <p style="background: white">No reviews</p>
                 </li>
               </ul>
             </li>
           </ul>
         </div>
+
 
 
       <%if recent_products.any?%>

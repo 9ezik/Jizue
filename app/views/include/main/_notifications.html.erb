@@ -1,3 +1,16 @@
+<script>
+    setTimeout(function() {
+        var successAlert = document.querySelector('.alert-success');
+        var dangerAlert = document.querySelector('.alert-danger');
+        if (successAlert) {
+            successAlert.remove();
+        }
+        if (dangerAlert) {
+            dangerAlert.remove();
+        }
+    }, 3000);
+</script>
+
 <% if notice %>
   <p class="alert alert-success"><%= notice %></p>
 <% end %>

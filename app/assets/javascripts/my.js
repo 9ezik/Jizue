@@ -30,11 +30,13 @@ $('#typeahead').bind('typeahead:select', function(ev, suggestion){
 
 /* Cart */
 
-$('body').on('click','.add-to-cart-link', function (e){
+$('body').on('click','.item_add', function (e){
+    console.log(1);
+
     e.preventDefault();
     var product_id = $(this).data('id'),
         quantity = $('.quantity input').val() ? $('.quantity input').val() : 1,
-        mod = $('available select').val(),
+        mod = $('.available select').val(),
         access = $('#cart_access').val();
 
         if(access == 99){
@@ -58,6 +60,7 @@ $('body').on('click','.add-to-cart-link', function (e){
 });
 
 $('#cart .modal-body').on('click', '.del-item', function(){
+    console.log(1);
     var id = $(this).data('id');
     $.ajax({
         beforeSend: function(xhr) {xhr.setRequestHeader ('X-CSRF-Token',
