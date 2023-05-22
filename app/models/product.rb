@@ -1,4 +1,5 @@
 class Product < ApplicationRecord
+    has_many :cart_item
     has_many :galleries
     belongs_to :category
     belongs_to :brand

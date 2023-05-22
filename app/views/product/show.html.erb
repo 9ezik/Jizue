@@ -65,7 +65,7 @@
                 <div class="clearfix"></div>
               </div>
 
-              <h5 class="item_price">$ <%= @product.price %></h5>
+              <h5 class="item_price"><%= @product.price %>$</h5>
               <% if @product.old_price %>
                 <del><%= @product.old_price %>$</del>
               <% end %>
