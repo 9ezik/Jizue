@@ -5,7 +5,7 @@ ActiveAdmin.register Gallery do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  # permit_params :product_id, :img
+  permit_params :product_id, :img
   #
   # or
   #

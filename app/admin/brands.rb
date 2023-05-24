@@ -5,7 +5,7 @@ ActiveAdmin.register Brand do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  # permit_params :title, :bytitle, :img, :description
+  permit_params :title, :bytitle, :img, :description
   #
   # or
   #
