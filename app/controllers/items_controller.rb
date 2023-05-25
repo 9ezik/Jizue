@@ -1,8 +1,11 @@
+#require 'pry'
+
 class ItemsController < ApplicationController
     include CartsHelper
     layout false
 
     def create
+        #binding.pry
         cart_items.create(item_params)
     end
 
