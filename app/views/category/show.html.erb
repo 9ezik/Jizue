@@ -5,11 +5,10 @@
       <ol class="breadcrumb">
         <li><a href="/"></a></li>
         <% if @category.parent %>
-          <li><%= @category.parent.title %></li>
+          <li><a href="/category/<%= @category.parent.id %>"><%= @category.parent.title %></a></li>
         <% end %>
         <li><%= @category.title %></li>
       </ol>
-
     </div>
   </div>
 </div>
