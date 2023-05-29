@@ -30,7 +30,7 @@ $('#typeahead').bind('typeahead:select', function(ev, suggestion){
 
 /* Cart */
 
-$('body').on('click','.item_add', function (e){
+$('body').on('click','.add-to-cart-link', function (e){
     console.log(1);
 
     e.preventDefault();
