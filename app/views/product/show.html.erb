@@ -106,16 +106,7 @@
               <input type="number" size="4" value="1" name="quantity" min="1" step="1">
             </div>
 
-              <%= link_to 'ADD TO CART',
-                          cart_items_path(product_id: @product.id),
-                          remote: true,
-                          data: { method: :post, id: @product.id, value: 'hello' },
-                          class: "add-cart item_add add-to-cart-link",
-                          id: "productAdd"
-
-              %>
-
-
+              <button id="add-to-cart-link" class="button-cart-add" data-id="<%= @product.id %>">ADD TO CART</button>
 
             </div>
           </div>
@@ -161,8 +152,6 @@
                     <h3><a href="<%= recently.id %>"><%= recently.title %></a></h3>
                     <p>Explore Now</p>
                     <h4>
-                      <a class="item_add add-to-cart-link" href="cart/add?id=<%= recently.id %>" data-id="<%= recently.id %>"><i></i>
-                      </a>
                       <span class="item_price">$ <%= recently.price %></span>
                       <% if recently.old_price %>
                         <del>$ <%= recently.old_price %></del>
