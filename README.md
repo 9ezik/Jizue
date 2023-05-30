@@ -5,7 +5,7 @@ Rails version => "7.0.4.3"
 
 ## Summary
 
-This is a online clothes store Jizue designed to allow users to buy clothes remotely. 
+This is an online clothes store Jizue designed to allow users to buy clothes remotely. 
 
 Users can register and log in. Also he can switch categories and add clothes to cart. Each peace of clothing has price, images, sale etc. Also, this project contains logic with recenly checked clothes and hits.
 
